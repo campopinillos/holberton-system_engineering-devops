@@ -7,7 +7,7 @@ In this repo we are going to find scripts about the shell basic commands, now I 
 
 <h2>0x00-shell_basics</h2>
 
-***0-current_working_directory***\n
+***0-current_working_directory*** \n
 A script that prints the absolute path name of the current working directory.
 
 ***1-listit***\n
