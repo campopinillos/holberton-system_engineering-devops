@@ -2,4 +2,8 @@
 
 <h1>Learning the Shell</h1>
 
-In this repo we are going to find scripts about the shell basic commands.
+In the folder 0x00-shell_basics we are going to find scripts about the shell basic commands.
+
+<h2>Permission</h2>
+
+In the folder 0x01-shell_permissions there are some scripts about the shell permission commands.
