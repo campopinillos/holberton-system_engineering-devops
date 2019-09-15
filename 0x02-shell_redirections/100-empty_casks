@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -name ".*" -size 0 -print | xargs ls -t | cat
+find ./ -empty -printf "%f\n" | cat
