@@ -1,7 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-int infinite_while(void);
+/**
+ * infinite_while - Infinite loop
+ *
+ * Return: 0
+ */
+int infinite_while(void)
+{
+	while (1)
+		sleep(1);
+	return (0);
+}
 /**
  * main - Creates 5 zombie processes
  *
@@ -16,24 +26,10 @@ int main(void)
 	{
 		zombie = fork();
 		if (!zombie)
-			return (EXIT_SUCCESS);
+			return (0);
 		printf("Zombie process created, PID: %d\n", zombie);
 		i++;
 	}
 	infinite_while();
-	return (EXIT_SUCCESS);
-}
-
-/**
- * infinite_while - Infinite loop
- *
- * Return: 0
- */
-int infinite_while(void)
-{
-	while (1)
-	{
-		sleep(1);
-	}
 	return (0);
 }
