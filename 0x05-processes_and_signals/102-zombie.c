@@ -16,7 +16,7 @@ int main(void)
 	{
 		zombie = fork();
 		if (!zombie)
-			return(EXIT_SUCCESS);
+			return (EXIT_SUCCESS);
 		printf("Zombie process created, PID: %d\n", zombie);
 		i++;
 	}
