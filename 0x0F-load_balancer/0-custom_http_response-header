@@ -10,5 +10,5 @@ str="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v
 str1="\n\tadd_header X-Served-By \$HOSTNAME;"
 str2="\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
 
-sed -i "s/server_name _;/$str$str1$str2/" /etc/nginx/sites-enabled/default
-service nginx start
+sudo sed -i "s/server_name _;/$str$str1$str2/" /etc/nginx/sites-enabled/default
+sudo service nginx start
