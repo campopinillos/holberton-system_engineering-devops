@@ -10,8 +10,8 @@ l_balancer="\nfrontend http\n
 \tdefault_backend load_b
 backend load_b\n
 \tbalance roundrobin
-\tserver web-01 104.196.15.117:80 check
-\tserver web-02 52.200.30.119:80 check
+\tserver 1207-web-01 104.196.15.117:80 check
+\tserver 1207-web-02 52.200.30.119:80 check
 "
 echo -e "$l_balancer" | sudo tee -a /etc/haproxy/haproxy.cfg
 echo -e "ENABLED=1\n" | sudo tee -a /etc/default/haproxy
