@@ -18,7 +18,7 @@ if __name__ == '__main__':
                for tasks in t_do_json if tasks)
 
     print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE,
-                                                          TASKS,
-                                                          DONE))
+                                                          DONE,
+                                                          TASKS,))
     [print("\t {}".format(task.get('title')))
      for task in t_do_json if task.get("completed")]
