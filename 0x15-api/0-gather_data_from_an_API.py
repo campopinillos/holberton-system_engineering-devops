@@ -3,8 +3,8 @@
 returns information about list progress"""
 
 if __name__ == '__main__':
-    import sys
     import requests
+    import sys
     url = 'https://jsonplaceholder.typicode.com/'
     user_id = sys.argv[1]
     u_id = requests.get(url + 'users?', params={'id': user_id}).json()
