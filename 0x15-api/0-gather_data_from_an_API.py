@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Python script that, using this REST API, for a given employee ID,
-returns information about his TODO list progress"""
+"""Python script that using a REST API, for a given employee ID,
+returns information about  TODO list progress"""
 
 if __name__ == '__main__':
     import sys
@@ -13,12 +13,12 @@ if __name__ == '__main__':
     t_do_json = t_do.json()
 
     EMPLOYEE = u_id_json.get('name')
-    TASKS = len(t_do_json)
     DONE = sum(tasks.get("completed")
                for tasks in t_do_json if tasks)
+    TASK = len(t_do_json)
 
     print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE,
                                                           DONE,
-                                                          TASKS,))
+                                                          TASK))
     [print("\t {}".format(task.get('title')))
      for task in t_do_json if task.get("completed")]
