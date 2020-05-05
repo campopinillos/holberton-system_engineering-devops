@@ -1,4 +1,4 @@
-#!/employee/bin/python3
+#!/usr/bin/python3
 """Python script that using a REST API, for a given employee ID,
 returns information about list progress"""
 
