@@ -5,3 +5,4 @@
 0x04-loops_conditions_and_parsing/apache-access.log
 0x06-regular_expressions/text_messages.log
 .vscode/settings.json
+__pycache__
